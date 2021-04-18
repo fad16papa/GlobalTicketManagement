@@ -1,10 +1,11 @@
-﻿using System;
+﻿using GlobalTicket.TicketManagement.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace GlobalTicket.TicketManagement.Domain.Entities
 {
-    public class Event
+    public class Event : AuditableEntity
     {
         public Guid EventId { get; set; }
         public string Name { get; set; }

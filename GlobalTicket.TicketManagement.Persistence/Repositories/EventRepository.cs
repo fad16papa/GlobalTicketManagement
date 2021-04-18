@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalTicket.TicketManagement.Persistence.Configurations.Repositories
+namespace GlobalTicket.TicketManagement.Persistence.Repositories
 {
     public class EventRepository : BaseRepository<Event>, IEventRepository
     {

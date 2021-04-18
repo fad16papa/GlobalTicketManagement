@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using GlobalTicket.TicketManagement.Application.Contracts.Infrastructure;
 using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using MediatR;
@@ -14,11 +15,13 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
     {
         private readonly IMapper _mapper;
         private readonly IEventRepository _eventRepository;
+        private readonly IEmailService _emailService;
 
-        public CreateEventCommandHandler(IMapper mapper, IEventRepository eventRepository)
+        public CreateEventCommandHandler(IMapper mapper, IEventRepository eventRepository, IEmailService emailService)
         {
             _mapper = mapper;
             _eventRepository = eventRepository;
+            _emailService = emailService;
         }
 
         public async Task<Guid> Handle(CreateEventCommand request, CancellationToken cancellationToken)

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{44C2E0DA-0426-4679-8A73-20BF2A690D15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B6B1548B-C853-4905-8336-ED97E7BBF7A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{14ABF573-98A2-414B-B548-0635C246E093}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C6842C50-FACD-40D6-99CC-AAC8A31C9104}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{33CB7303-EF16-4948-AD9A-75E2ABC0D60C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{B5CB922D-A481-475F-9E35-04012B938C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTicket.TicketManagement.Domain", "GlobalTicket.TicketManagement.Domain\GlobalTicket.TicketManagement.Domain.csproj", "{9F41402B-D475-426C-978D-8DC547FF8A89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F41402B-D475-426C-978D-8DC547FF8A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F41402B-D475-426C-978D-8DC547FF8A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F41402B-D475-426C-978D-8DC547FF8A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F41402B-D475-426C-978D-8DC547FF8A89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14ABF573-98A2-414B-B548-0635C246E093} = {44C2E0DA-0426-4679-8A73-20BF2A690D15}
+		{C6842C50-FACD-40D6-99CC-AAC8A31C9104} = {44C2E0DA-0426-4679-8A73-20BF2A690D15}
+		{33CB7303-EF16-4948-AD9A-75E2ABC0D60C} = {44C2E0DA-0426-4679-8A73-20BF2A690D15}
+		{B5CB922D-A481-475F-9E35-04012B938C4D} = {44C2E0DA-0426-4679-8A73-20BF2A690D15}
+		{9F41402B-D475-426C-978D-8DC547FF8A89} = {C6842C50-FACD-40D6-99CC-AAC8A31C9104}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6422D632-8F19-4664-946A-52237603969D}
+	EndGlobalSection
+EndGlobal

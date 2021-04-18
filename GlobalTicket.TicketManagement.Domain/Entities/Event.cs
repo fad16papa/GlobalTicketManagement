@@ -4,7 +4,8 @@ using System.Text;
 
 namespace GlobalTicket.TicketManagement.Domain.Entities
 {
-    class Event
+    public class Event
     {
+
     }
 }

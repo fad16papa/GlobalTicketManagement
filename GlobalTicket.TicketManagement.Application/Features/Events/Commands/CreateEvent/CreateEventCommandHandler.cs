@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using GlobalTicket.TicketManagement.Application.Contracts.Infrastructure;
 using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
+using GlobalTicket.TicketManagement.Application.Model.Mail;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using MediatR;
 using System;
@@ -35,6 +36,23 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
             var @event = _mapper.Map<Event>(request);
 
             @event = await _eventRepository.AddAsync(@event);
+
+            var email = new Email()
+            {
+                To = "fad16papa@gmail.com",
+                Body = $"A new event was created: {request}",
+                Subject = "A new event was created."
+            };
+
+            try
+            {
+                await _emailService.SendEmail(email);
+            }
+            catch (Exception ex)
+            {
+                //this should not stop the API from doing else so this can be logged
+                //throw;
+            }
 
             return @event.EventId;
         }

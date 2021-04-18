@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GlobalTicket.TicketManagement.Domain.Entities
 {
-    class Category
+    public class Category
     {
     }
 }

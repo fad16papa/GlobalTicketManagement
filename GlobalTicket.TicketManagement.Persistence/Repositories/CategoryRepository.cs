@@ -1,11 +1,11 @@
-﻿using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
-using GlobalTicket.TicketManagement.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
+using GlobalTicket.TicketManagement.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace GlobalTicket.TicketManagement.Persistence.Repositories
 {
@@ -19,7 +19,7 @@ namespace GlobalTicket.TicketManagement.Persistence.Repositories
         {
             var allCategories = await _dbContext.Categories.Include(x => x.Events).ToListAsync();
 
-            if(!includePassedEvents)
+            if (!includePassedEvents)
             {
                 allCategories.ForEach(x => x.Events.ToList().RemoveAll(x => x.Date < DateTime.Today));
             }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mq5KqjVpyage18uSn2d8KmGAmTSr52jQcCo66tT+gW45inuIeKJ3MXAhGNvZAO4bk3K5yBCU6MWpnTnhetPDQQ==",
+  "dgSpecHash": "9TeZuHel3MaJdon5/s1od5paV33QWKnFSipKcBiRUX96DmlJyiOaVHOD7qAdEmNGerJtm5PtvGrGPdF8V49+pQ==",
   "success": true,
-  "projectFilePath": "D:\\.NetCore\\GlobalTicket.TicketManagement\\GlobalTicket.TicketManagement.Domain\\GlobalTicket.TicketManagement.Domain.csproj",
+  "projectFilePath": "/Users/francisdecena/project/GlobalTicketManagement/GlobalTicket.TicketManagement.Domain/GlobalTicket.TicketManagement.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "/Users/francisdecena/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/francisdecena/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

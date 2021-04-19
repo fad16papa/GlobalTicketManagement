@@ -1,14 +1,14 @@
-﻿using AutoMapper;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using AutoMapper;
 using GlobalTicket.TicketManagement.Application.Contracts.Infrastructure;
 using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 using GlobalTicket.TicketManagement.Application.Model.Mail;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent
 {
@@ -48,7 +48,7 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
             {
                 await _emailService.SendEmail(email);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //this should not stop the API from doing else so this can be logged
                 //throw;
